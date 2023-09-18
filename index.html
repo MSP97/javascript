@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viveka Computer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Viveka<span>.</span></a>
+        <div class="menuToggle"onclick="toggleMenu();"></div>
+        <ul class="navigation">
+        <li><a href="#banner"onclick="toggleMenu();">Home</a></li>
+        <li><a href="#About"onclick="toggleMenu();">About</a></li>
+        <li><a href="#Service"onclick="toggleMenu();">Service</a></li>
+        <li><a href="#Contact"onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+           <h2>Always Choose Good</h2>             
+        </div>
+    </section>
+
+    <section class="About" id="About">
+        <div class="row">
+            <div class="col50">
+            <h2 class="titleText"><span>A</span>bout Us</h2>
+            <br>
+            <p>Computers are the need of the time. Be it for personal use or any business requirement, a personal computer or laptop
+               is a necessity that can never be computer dealers provide the latest computer and genuine accessories at a much more
+               affordable price.<br> Form complete computer systems to spare parts, the dealers can be the experts to consult.<br>
+               You can visit viveka computers in Ambasamudram, Ambasamudram to get the ideal PC you need. 
+            </p>
+            </div>
+        
+        <div class="col50">
+            <div class="imgBx">
+                <img src="computer.jpg">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="Service" id="Service">
+        <div class="row">
+           <h2 class="titleText"><span>S</span>ervice</h2>
+           
+           <div class="col50">
+            <div class="imgBx">
+                <img src="computer.jpg">
+            </div>
+        </div>
+            
+        <div class="col50">
+            <div class="imgBx">
+                <img src="Lab.jpg">
+            </div>
+        </div>
+            </div>
+            </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+              const header = document.querySelector('header');
+              header.classList.toggle("sticky",window.scrollY > 0);
+        });
+    </script>
+
+</body>
+</html> 
